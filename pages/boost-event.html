@@ -168,6 +168,50 @@
         .skip-link:focus {
             top: 0;
         }
+        .email-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-purple);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .email-button:hover, .email-button:focus {
+            background-color: var(--dark-purple);
+        }
+        .social-media-section {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap; /* Allow icons to wrap to the next line */
+        }
+        .social-media-icons a {
+            display: inline-flex; /* Use inline-flex to keep icons on the same line */
+            align-items: center; /* Vertically align items */
+        }
+
+        .social-media-icons img {
+            width: 32px; /* Increase icon size */
+            height: 32px; /* Increase icon size */
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .social-media-icons img:hover {
+            transform: scale(1.1);
+        }
+        .social-media-text {
+            margin-top: 1rem;
+            text-align: center;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -185,6 +229,16 @@
         <section class="intro">
             <h2>Want to amplify your community's voice?</h2>
             <p>Learn how our volunteers can bring interactive civic engagement tools to your next event.</p>
+            <a href="mailto:your-email@example.com" class="email-button">Email us</a>
+            <div class="social-media-text">
+                <p>Connect with us on social media</p>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://bsky.app/profile/publicsquareto.bsky.social" aria-label="Link to Bluesky"><img src="/img/Blue-Sky-logo.svg" alt="Bluesky Logo"></a>
+                <a href="https://mstdn.ca/@publicsquareto" aria-label="Link to Mastodon"><img src="/img/Mastodon-logo.svg" alt="Mastodon Logo"></a>
+                <a href="https://x.com/publicsquareto" aria-label="Link to X"><img src="/img/X-logo.svg" alt="X Logo"></a>
+                <a href="https://github.com/publicsquareto" aria-label="Link to Github"><img src="/img/Github-logo.svg" alt="Github Logo"></a>
+            </div>
         </section>
 
         <!-- Add your main content here -->
@@ -203,10 +257,10 @@
                     <a href="#contact">Contact</a>
                     <a href="#contribute">Contribute
                         <div class="social-icons">
-                            <a href="https://bsky.app/profile/publicsquareto.bsky.social" aria-label="Link to Bluesky"><img src="../img/Blue-Sky-logo.svg" alt="Bluesky Logo"></a>
-                            <a href="https://mstdn.ca/@publicsquareto" aria-label="Link to Mastodon"><img src="../img/Mastodon-logo.svg" alt="Mastodon Logo"></a>
-                            <a href="https://x.com/publicsquareto" aria-label="Link to X"><img src="../img/X-logo.svg" alt="X Logo"></a>
-                            <a href="https://github.com/publicsquareto" aria-label="Link to Github"><img src="../img/Github-logo.svg" alt="Github Logo"></a>
+                            <a href="https://bsky.app/profile/publicsquareto.bsky.social" aria-label="Link to Bluesky"><img src="/img/Blue-Sky-logo.svg" alt="Bluesky Logo"></a>
+                            <a href="https://mstdn.ca/@publicsquareto" aria-label="Link to Mastodon"><img src="/img/Mastodon-logo.svg" alt="Mastodon Logo"></a>
+                            <a href="https://x.com/publicsquareto" aria-label="Link to X"><img src="/img/X-logo.svg" alt="X Logo"></a>
+                            <a href="https://github.com/publicsquareto" aria-label="Link to Github"><img src="/img/Github-logo.svg" alt="Github Logo"></a>
                         </div>
                     </a>
                 </div>
