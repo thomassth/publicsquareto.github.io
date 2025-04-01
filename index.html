@@ -180,12 +180,15 @@
             margin: 1rem 0;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center; /* Vertically align items */
         }
 
         .footer-links a {
             color: var(--white);
             text-decoration: none;
             transition: color 0.3s ease;
+            display: flex; /* Make links flex containers */
+            align-items: center; /* Vertically align text and icons */
         }
 
         .footer-links a:hover, .footer-links a:focus {
@@ -231,6 +234,21 @@
 
         .skip-link:focus {
             top: 0;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 0.5rem; /* Add some space between "Contribute" and the icons */
+        }
+
+        .social-icons img {
+            width: 24px; /* Adjust icon size as needed */
+            height: 24px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
         }
     </style>
     <!-- Added Roboto font from Google Fonts -->
@@ -331,7 +349,15 @@
                     <a href="#accessibility">Accessibility</a>
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#contact">Contact</a>
-                    <a href="#contribute">Contribute</a>
+                    <a href="#contribute">Contribute
+                        <div class="social-icons">
+                            <a href="https://bsky.app/profile/publicsquareto.bsky.social" aria-label="Link to Bluesky"><img src="img/Blue-Sky-logo.svg" alt="Bluesky Logo"></a>
+                            <a href="https://mstdn.ca/@publicsquareto" aria-label="Link to Mastodon"><img src="img/Mastodon-logo.svg" alt="Mastodon Logo"></a>
+                            <a href="https://x.com/publicsquareto" aria-label="Link to X"><img src="img/X-logo.svg" alt="X Logo">
+                            <a href="https://github.com/publicsquareto" aria-label="Link to Github"><img src="img/Github-logo.svg" alt="Github Logo"></a>
+                          </a>
+                        </div>
+                    </a>
                 </div>
             </nav>
 
