@@ -63,12 +63,39 @@
             .header-content {
                 position: relative;
                 z-index: 1;
+                display: flex; /* Add flex display */
+                justify-content: space-between; /* Space out items */
+                align-items: center; /* Center items vertically */
             }
 
             h1 {
                 font-size: 2.5rem;
                 margin-bottom: 0.5rem;
-                text-align: center;
+                text-align: left; /* Changed to left align */
+            }
+
+            .nav-buttons {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .nav-button {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: white;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: 500;
+                transition: background-color 0.3s ease;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .nav-button:hover, .nav-button:focus {
+                background-color: rgba(255, 255, 255, 0.3);
+                text-decoration: underline;
             }
 
             .tagline {
@@ -326,7 +353,11 @@
     <header>
         <div class="container header-content">
             <h1>FAQ</h1>
+            <div class="nav-buttons">
+                <a href="/ward12-tenancy.html" class="nav-button">Back to Conversation</a>
+            </div>
         </div>
+        
     </header>
 
     <main id="main-content" class="container">
