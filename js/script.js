@@ -71,5 +71,16 @@ const bikelanesContainerAttributes = {
   'data-conversation_id': '7btrabcujr',
   'data-xid': getOrGenerateXID(),
 }
-embedPolisConversation(polisContainerAttributes);
-//refactor pending embedPolisConversation(bikelanesContainerAttributes);
+
+const titleElement = document.querySelector("title");
+const text = titleElement ? titleElement.textContent : '';
+
+if(text === "Housing Rights Hub - Public Square TO"){
+  embedPolisConversation(polisContainerAttributes);
+} else if (text === "Bike Lanes in Toronto - Public Square TO"){
+  embedPolisConversation(bikelanesContainerAttributes);
+} else {
+  console.error("No conversation found.");
+  document.getElementById("polis-container").innerHTML = "<p style='color:red'>Error:"
+    + " No Conversation Found</p>";
+}
