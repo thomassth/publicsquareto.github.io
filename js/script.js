@@ -61,5 +61,15 @@ const polisContainerAttributes = {
   'data-conversation_id': '8bxccbnjbs',
   'data-xid': getOrGenerateXID(),
 }
-
+const bikelanesContainerAttributes = {
+  'class': 'polis',
+  'data-ucst': 'false',   // user can see title
+  'data-ucsd': 'false',   // user can see description
+  'data-ucsf': 'false',   // user can see footer
+  'data-ucw': 'true',    // user can write
+  'data-ucv': 'true',     // user can vote
+  'data-conversation_id': '7btrabcujr',
+  'data-xid': getOrGenerateXID(),
+}
 embedPolisConversation(polisContainerAttributes);
+//refactor pending embedPolisConversation(bikelanesContainerAttributes);
