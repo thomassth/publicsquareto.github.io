@@ -51,7 +51,7 @@ function embedPolisConversation(polisContainerAttributes) {
   polisContainer.appendChild(embedScript)
 }
 
-const polisContainerAttributes = {
+const housingConversationAttributes = {
   'class': 'polis',
   'data-ucst': 'false',   // user can see title
   'data-ucsd': 'false',   // user can see description
@@ -61,7 +61,7 @@ const polisContainerAttributes = {
   'data-conversation_id': '8bxccbnjbs',
   'data-xid': getOrGenerateXID(),
 }
-const bikelanesContainerAttributes = {
+const bikeLanesConversationAttributes = {
   'class': 'polis',
   'data-ucst': 'false',   // user can see title
   'data-ucsd': 'false',   // user can see description
@@ -76,9 +76,9 @@ const titleElement = document.querySelector("title");
 const text = titleElement ? titleElement.textContent : '';
 
 if(text === "Housing Rights Hub - Public Square TO"){
-  embedPolisConversation(polisContainerAttributes);
+  embedPolisConversation(housingConversationAttributes);
 } else if (text === "Bike Lanes in Toronto - Public Square TO"){
-  embedPolisConversation(bikelanesContainerAttributes);
+  embedPolisConversation(bikeLanesConversationAttributes);
 } else {
   console.error("No conversation found.");
   document.getElementById("polis-container").innerHTML = "<p style='color:red'>Error:"
