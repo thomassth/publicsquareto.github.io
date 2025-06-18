@@ -6,7 +6,8 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astronaut.github.io',
+  site: 'https://thomassth.github.io',
+  base: 'publicsquareto.github.io',
   experimental: {
     headingIdCompat: true,
   },
